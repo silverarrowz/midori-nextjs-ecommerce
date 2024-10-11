@@ -2,15 +2,35 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const garamond = localFont({
+  src: "./fonts/Garamond.ttf",
+  variable: "--font-garamond",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const garamondItalic = localFont({
+  src: "./fonts/Garamond-Italic.ttf",
+  variable: "--font-garamond-italic",
+  weight: "400 700",
+  style: "italic",
+});
+
+const garamondBold = localFont({
+  src: "./fonts/Garamond-Bold.ttf",
+  variable: "--font-garamond-bold",
+  weight: "700",
+});
+
+const roboto = localFont({
+  src: "./fonts/Roboto-Regular.ttf",
+  variable: "--font-roboto",
+  weight: "400",
+});
+
+const robotoLight = localFont({
+  src: "./fonts/Roboto-Light.ttf",
+  variable: "--font-roboto-light",
+  weight: "100",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${garamond.variable} ${garamondBold.variable} ${roboto.variable} ${robotoLight.variable} ${garamondItalic.variable} font-sans antialiased`}
       >
         {children}
       </body>
