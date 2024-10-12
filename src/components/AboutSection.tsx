@@ -4,11 +4,11 @@ import { PiPlant } from "react-icons/pi";
 
 const AboutSection = () => {
   return (
-    <section className="">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  bg-[#e2f4e2]">
-        <div className="flex flex-col justify-start gap-20 p-24">
+    <section>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  bg-background-light">
+        <div className="flex flex-col justify-start gap-20 p-10 sm:p-24">
           <div>
-            <h1 className="text-7xl font-serif text-[#23b963] pl-12 relative">
+            <h1 className="text-5xl sm:text-7xl font-serif text-heading-dark pl-12 relative">
               MiDori
               <svg
                 className="left-0 -bottom-20 w-56 absolute"
@@ -31,18 +31,18 @@ const AboutSection = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-5xl font-serif-italic text-[#23b963]">
+              <span className="text-3xl sm:text-5xl font-serif-italic text-heading-dark">
                 {" "}
                 — это
               </span>
             </h1>
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-10">
             <div className="flex items-center gap-4">
               <GiFruitTree size={72} />
-              <div>
-                <h2 className="text-[#23b963] font-bold text-2xl">
+              <div className="max-w-[74%] sm:max-w-none lg:max-w-[80%] xl:max-w-[84%]">
+                <h2 className="text-heading-dark font-bold text-xl sm:text-2xl">
                   ЛУЧШИЕ ИНГРЕДИЕНТЫ
                 </h2>
                 <p className="max-w-[80%]">
@@ -55,28 +55,27 @@ const AboutSection = () => {
 
             <div className="flex items-center gap-4">
               <IoSparklesOutline size={72} />
-              <div>
-                <h2 className="text-[#23b963] font-bold text-2xl">
+              <div className="max-w-[74%] sm:max-w-none lg:max-w-[80%] xl:max-w-[84%]">
+                <h2 className="text-heading-dark font-bold text-xl sm:text-2xl">
                   ВОСХИТИТЕЛЬНЫЙ ВКУС
                 </h2>
                 <p className="max-w-[80%]">
-                  Мы сотрудничаем с одним из лучших поставщиков Японии и делаем
-                  наши десерты из самых свежих и высококачественных
-                  ингредиентов.
+                  MiDori вдохновляется традициями японских мастеров, все наши
+                  моти ручной работы и приготовлены по лучшим рецептам,
+                  проверенным временем
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <PiPlant size={72} />
-              <div>
-                <h2 className="text-[#23b963] font-bold text-2xl">
+              <PiPlant className="h-[72px] w-[72px] sm:w-[64px] sm:h-[64px]" />
+              <div className="max-w-[74%] sm:max-w-none lg:max-w-[80%] xl:max-w-[84%]">
+                <h2 className="text-heading-dark font-bold text-xl sm:text-2xl">
                   100% VEGAN
                 </h2>
                 <p className="max-w-[80%]">
-                  Мы сотрудничаем с одним из лучших поставщиков Японии и делаем
-                  наши десерты из самых свежих и высококачественных
-                  ингредиентов.
+                  Мы заботимся о сохранении планеты, в составе наших моти только
+                  свежие, органически выращенные рис, фрукты и ягоды
                 </p>
               </div>
             </div>
@@ -100,18 +99,18 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start gap-4 bg-button p-24">
+        <div className="flex flex-col justify-start gap-4 bg-button p-16 sm:p-24">
           <img
             src="/images/mochi-mandarin.png"
             alt="Japanese Dessert"
             className="w-full object-cover h-auto -mt-14 mb-5"
           />
-          <h2 className="mb-5 text-5xl font-serif-italic">
+          <h2 className="mb-5 text-5xl text-heading-dark font-serif-italic">
             Японский десерт с многолетней историей
           </h2>
           <p className="">
-            Моти — старинное и самое известное японское лакомство, на
-            сегодняшний день полюбившееся многим сладкоежкам по всему миру
+            Моти — старинное и самое известное японское лакомство, завоевавшее
+            сердца сладкоежек по всему миру. MiDori вдохновляемся
           </p>
         </div>
       </div>

@@ -9,11 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "425px",
+      },
       colors: {
         background: "hsl(var(--background))",
+        "background-light": "var(--background-light)",
+        "background-lightest": "var(--background-lightest)",
         foreground: "hsl(var(--foreground))",
         button: "hsl(var(--button))",
         "button-hover": "var(--button-hover)",
+        "heading-dark": "var(--heading-dark)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

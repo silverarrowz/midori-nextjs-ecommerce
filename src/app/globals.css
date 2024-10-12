@@ -5,6 +5,9 @@
 :root {
   --button: 76 100% 87%;
   --button-hover: #f6e374;
+  --heading-dark: #23b963;
+  --background-light: #e2f4e2;
+  --background-lightest: #f0f8f0;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -87,4 +90,9 @@ body {
   body {
     @apply bg-background text-foreground selection:bg-button-hover;
   }
+}
+
+.bg-gradient {
+  background-image: url("/images/blurry-gradient.png");
+  background-size: cover;
 }

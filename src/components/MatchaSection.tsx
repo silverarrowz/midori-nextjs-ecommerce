@@ -5,28 +5,30 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import FeaturedItem from "./FeaturedItem";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
-const FeaturedSection = () => {
+const MatchaSection = () => {
   const slider = useRef(null);
 
   const featuredItems = [
     {
-      title: "«Мандарин»",
-      price: 220,
-      image: "/images/mochi-mandarin.png",
+      title: "Матча",
+      amount: "100 г",
+      price: 320,
+      image: "/images/matcha.png",
     },
     {
-      title: "«Пина Колада»",
-      price: 260,
-      image: "/images/mochi-pineapple.png",
+      title: "Розовая матча",
+      amount: "100 г",
+      price: 360,
+      image: "/images/matcha-pink.png",
     },
     {
-      title: "«Маковый»",
-      price: 190,
-      image: "/images/mochi-sesame.png",
+      title: "Голубая матча",
+      amount: "100 г",
+      price: 330,
+      image: "/images/matcha-blue.png",
     },
   ];
 
@@ -54,17 +56,21 @@ const FeaturedSection = () => {
 
   return (
     <section
-      className="bg-white mt-16 sm:mt-28 md:mt-48 
-    lg:mt-4 
-    pt-8 pb-8 
-    relative overflow-hidden"
+      className="
+    pt-8 
+    relative overflow-hidden
+   bg-background-lightest"
     >
       <h2
         className="z-50 text-3xl md:text-4xl lg:text-5xl
-      text-center font-serif"
+      text-center font-serif text-heading-dark"
       >
-        Новинки
+        Матча
       </h2>
+      <p className="text-center py-6 px-8 font-sans-light">
+        Мы рады представить Вам нашу новую коллецкцию MiDori Matcha — идеальное
+        дополнение к Вашему любимому десерту!
+      </p>
 
       <div
         className=" max-w-[94%] text-center 
@@ -83,19 +89,36 @@ const FeaturedSection = () => {
           />
         </button>
 
-        <Slider ref={slider} {...settings}>
+        <Slider className="mb-14" ref={slider} {...settings}>
           {featuredItems.map((item) => (
             <FeaturedItem
               key={item.image}
               title={item.title}
               image={item.image}
               price={item.price}
+              amount={item.amount}
             />
           ))}
         </Slider>
+
+        <button
+          className="
+              group hover:opacity-70
+             self-center mt-6
+              flex items-center gap-2
+              mx-auto font-sans-light uppercase tracking-widest"
+        >
+          Смотреть все
+          <span
+            className="text-xl group-hover:translate-x-1 transition-all
+               duration-100 ease-in-out"
+          >
+            &rarr;
+          </span>
+        </button>
       </div>
     </section>
   );
 };
 
-export default FeaturedSection;
+export default MatchaSection;
