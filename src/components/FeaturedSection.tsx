@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import FeaturedItem from "./FeaturedItem";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
@@ -74,12 +73,14 @@ const FeaturedSection = () => {
         <button>
           <MdNavigateBefore
             className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute left-0 top-[40%] sm:hidden"
+            // @ts-expect-error test
             onClick={() => slider?.current?.slickPrev()}
           />
         </button>
         <button>
           <MdNavigateNext
             className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute right-0 top-[40%] sm:hidden"
+            // @ts-expect-error test
             onClick={() => slider?.current?.slickNext()}
           />
         </button>

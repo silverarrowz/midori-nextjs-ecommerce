@@ -94,9 +94,11 @@ const ReviewsSection = () => {
       >
         <h3>Отзывы</h3>
         <div className="absolute top-0 right-0 z-10">
+          {/* @ts-expect-error test  */}
           <button onClick={() => slider?.current?.slickPrev()}>
             <TfiAngleLeft className="w-8 h-8" />
           </button>
+          {/* @ts-expect-error test */}
           <button onClick={() => slider?.current?.slickNext()}>
             <TfiAngleRight className="w-8 h-8" />
           </button>
