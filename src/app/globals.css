@@ -92,6 +92,11 @@ body {
   }
 }
 
+html,
+:root {
+  scroll-behavior: smooth;
+}
+
 .bg-gradient {
   background-image: url("/images/blurry-gradient.png");
   background-size: cover;

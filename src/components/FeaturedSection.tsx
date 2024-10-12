@@ -54,6 +54,7 @@ const FeaturedSection = () => {
 
   return (
     <section
+      id="mochi"
       className="bg-white mt-16 sm:mt-28 md:mt-48 
     lg:mt-4 
     pt-8 pb-8 

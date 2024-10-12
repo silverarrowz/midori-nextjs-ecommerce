@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const IntroSection = () => {
   return (
     <section
@@ -21,7 +23,8 @@ const IntroSection = () => {
           </h1>
           <p className="font-sans-light">магазин моти ручной работы</p>
           <div className="flex justify-center gap-3 mt-5">
-            <button
+            <Link
+              href={"#mochi"}
               className="bg-button/60 backdrop-blur-md hover:bg-button-hover 
                hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
              
@@ -29,8 +32,9 @@ const IntroSection = () => {
              border-2 border-foreground py-1 px-8 rounded-[14px]"
             >
               Моти
-            </button>
-            <button
+            </Link>
+            <Link
+              href={"#matcha"}
               className="bg-background/40 text-foreground font-sans-light
              border-2 shadow-[inset_0_0_2px_2px_rgba(43,230,96,0.36),0_0_6px_1px_rgba(43,230,96,0.36)]
              hover:shadow-[inset_0_0_4px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
@@ -39,7 +43,7 @@ const IntroSection = () => {
              "
             >
               Матча
-            </button>
+            </Link>
           </div>
         </div>
       </div>
