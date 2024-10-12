@@ -11,7 +11,7 @@ const garamond = localFont({
 const garamondItalic = localFont({
   src: "./fonts/Garamond-Italic.ttf",
   variable: "--font-garamond-italic",
-  weight: "400 700",
+  weight: "400",
   style: "italic",
 });
 

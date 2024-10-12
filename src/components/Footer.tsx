@@ -5,7 +5,10 @@ import { RiVkLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[420px] bg-gradient-to-b from-background-lightest via-buttons to-button-hover px-4 py-8 sm:px-16 sm:py-36">
+    <footer
+      className="min-h-[420px] bg-gradient
+    px-4 py-8 sm:px-16 sm:py-36"
+    >
       <div className="flex flex-col gap-y-20 sm:flex-row justify-between">
         <div className="flex flex-col gap-16 sm:gap-28">
           <div className="flex flex-col gap-8">
@@ -60,12 +63,7 @@ const Footer = () => {
               <li>
                 <Link href={"/about"}>Матча</Link>
               </li>
-              <li>
-                <Link href={"/blog"}>Наборы</Link>
-              </li>
-              <li>
-                <Link href={"/contacts"}>Новинки</Link>
-              </li>
+
               <li>
                 <Link href={"/contacts"}>Скидки и акции</Link>
               </li>
