@@ -118,7 +118,7 @@ const Header = () => {
       <MobileNav />
       <Link
         href={"/"}
-        className="text-2xl text-foreground font-serif italic
+        className="text-2xl text-foreground font-cormorant-garamond
         text-center"
       >
         MiDori

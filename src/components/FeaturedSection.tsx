@@ -61,7 +61,7 @@ const FeaturedSection = () => {
     >
       <h2
         className="z-50 text-3xl md:text-4xl lg:text-5xl
-      text-center font-serif"
+      text-center font-cormorant-garamond text-heading-dark"
       >
         Новинки
       </h2>
@@ -72,14 +72,14 @@ const FeaturedSection = () => {
       >
         <button>
           <MdNavigateBefore
-            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute left-0 top-[36%] sm:hidden"
+            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute left-0 top-[36%] text-heading-dark sm:hidden"
             // @ts-expect-error test
             onClick={() => slider?.current?.slickPrev()}
           />
         </button>
         <button>
           <MdNavigateNext
-            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute right-0 top-[36%] sm:hidden"
+            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute right-0 top-[36%] text-heading-dark sm:hidden"
             // @ts-expect-error test
             onClick={() => slider?.current?.slickNext()}
           />

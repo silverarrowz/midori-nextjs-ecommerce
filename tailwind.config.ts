@@ -20,6 +20,7 @@ const config: Config = {
         button: "hsl(var(--button))",
         "button-hover": "var(--button-hover)",
         "heading-dark": "var(--heading-dark)",
+        heading: "var(--heading)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -65,6 +66,8 @@ const config: Config = {
         "sans-light": ["var(--font-roboto-light)"],
         "serif-italic": ["var(--font-garamond-italic)"],
         "serif-bold": ["var(--font-garamond-bold)"],
+        ubuntu: ["var(--font-ubuntu)"],
+        "cormorant-garamond": ["var(--font-cormorant-garamond)"],
       },
       borderRadius: {
         lg: "var(--radius)",

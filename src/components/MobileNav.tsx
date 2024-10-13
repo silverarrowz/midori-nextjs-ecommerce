@@ -12,7 +12,7 @@ const MobileNav = () => {
         <SheetContent side={"left"} className="w-full">
           <nav>
             <ul
-              className="text-3xl font-sans-light 
+              className="text-3xl font-light
             flex flex-col gap-4 p-4 *:hover:*:opacity-70"
             >
               <li>

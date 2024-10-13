@@ -6,7 +6,8 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
-import { IoMdStar } from "react-icons/io";
+import { IoMdStar, IoMdStarOutline } from "react-icons/io";
+import { FaRegStar } from "react-icons/fa";
 
 const ReviewsSection = () => {
   const settings = {
@@ -88,19 +89,19 @@ const ReviewsSection = () => {
     <section className="bg-white min-h-96 pt-2 pb-16">
       <div
         className="z-50 text-3xl md:text-4xl lg:text-5xl
-      font-serif my-10 sm:my-16
+      font-cormorant-garamond my-10 sm:my-16
      mx-4 sm:mx-24 xl:mx-44 
      relative"
       >
-        <h3>Отзывы</h3>
+        <h3 className="text-heading-dark">Отзывы</h3>
         <div className="absolute top-0 right-0 z-10">
           {/* @ts-expect-error test  */}
           <button onClick={() => slider?.current?.slickPrev()}>
-            <TfiAngleLeft className="w-8 h-8" />
+            <TfiAngleLeft className="w-8 h-8 text-heading-dark" />
           </button>
           {/* @ts-expect-error test */}
           <button onClick={() => slider?.current?.slickNext()}>
-            <TfiAngleRight className="w-8 h-8" />
+            <TfiAngleRight className="w-8 h-8 text-heading-dark" />
           </button>
         </div>
       </div>
@@ -114,28 +115,29 @@ const ReviewsSection = () => {
                   alt={review.name}
                   className="object-cover absolute top-0 left-0 w-full h-full"
                 />
-                <div className="absolute top-0 left-0 bottom-0 right-0 z-30 bg-button/30 hover:bg-transparent transition" />
+                <div className="absolute top-0 left-0 bottom-0 right-0 z-30 bg-background/30 hover:bg-transparent transition" />
               </div>
               <div
-                className="flex *:text-button-hover 
-              *:h-8 *:w-8
-               sm:*:w-6 sm:*:h-6
+                className="flex *:text-heading-dark 
+              *:h-6 *:w-6
               md:*:w-8 md:*:h-8
               lg:*:w-10 lg:*:h-10
              "
               >
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
+                <IoMdStarOutline />
+                <IoMdStarOutline />
+                <IoMdStarOutline />
+                <IoMdStarOutline />
+                <IoMdStarOutline />
               </div>
               <div className="flex flex-col gap-2 text-center sm:text-left mb-2">
-                <h4 className="text-xl font-semibold">{review.name}</h4>
-                <p className="text-sm">@{review.username}</p>
+                <h4 className="text-xl text-heading-dark font-semibold">
+                  {review.name}
+                </h4>
+                <p className="text-sm text-heading">@{review.username}</p>
               </div>
-              <p className="text-sm font-sans-light px-8 sm:p-0">
-                {review.comment}
+              <p className="text-sm text-heading italic font-light px-8 sm:p-0">
+                «{review.comment}»
               </p>
             </div>
           </div>

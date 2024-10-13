@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Mulish, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+
+const ubuntu = Mulish({
+  weight: ["300", "400", "700"],
+  subsets: ["cyrillic", "latin"],
+  variable: "--font-ubuntu",
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  weight: ["300", "400", "700"],
+  variable: "--font-cormorant-garamond",
+  style: ["italic", "normal"],
+  subsets: ["cyrillic", "latin"],
+});
 
 const garamond = localFont({
   src: "./fonts/Garamond.ttf",
@@ -45,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${garamond.variable} ${garamondBold.variable} ${roboto.variable} ${robotoLight.variable} ${garamondItalic.variable} font-sans antialiased`}
+        className={`${cormorantGaramond.variable} ${garamond.variable} ${ubuntu.variable} ${garamondBold.variable} ${roboto.variable} ${robotoLight.variable} ${garamondItalic.variable} font-ubuntu antialiased`}
       >
         {children}
       </body>

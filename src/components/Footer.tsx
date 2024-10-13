@@ -6,13 +6,13 @@ import { RiVkLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <footer
-      className="min-h-[420px] bg-gradient
-    px-4 py-8 sm:px-16 sm:pt-16"
+      className="min-h-[420px] bg-background
+    relative  px-4 py-8 sm:px-16 sm:pt-16"
     >
       <div className="flex flex-col gap-y-20 md:flex-row justify-between">
         <div className="flex flex-col gap-16 sm:gap-28">
           <div className="flex flex-col gap-8">
-            <h3 className="text-3xl sm:text-4xl tracking-widest">
+            <h3 className="text-3xl sm:text-4xl font-cormorant-garamond">
               Мы в соцсетях
             </h3>
             <div className="flex gap-2 items-center *:hover:*:opacity-70">
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <h4 className="mb-4 font-sans-light">
+            <h4 className="mb-4 font-light">
               Подписывайтесь и получайте скидки и бонусы
             </h4>
             <form className="flex flex-col sm:flex-row gap-2 items-stretch">
@@ -38,11 +38,11 @@ const Footer = () => {
                 className="py-2 px-4 border border-foreground 
                  placeholder:text-foreground
                 focus:outline-none 
-              
+              rounded-3xl
                   font-sans-light"
               />
               <button
-                className="bg-button 
+                className="bg-button rounded-3xl
              tracking-widest border border-foreground
                hover:bg-transparent hover:italic
                 hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
@@ -53,10 +53,12 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="flex  sm:gap-14 justify-between">
+        <div className="grid grid-cols-2">
           <div className="flex flex-col gap-8">
-            <h3 className="text-3xl sm:text-4xl  tracking-widest">Магазин</h3>
-            <ul className="flex flex-col gap-2 *:hover:*:opacity-60">
+            <h3 className="text-2xl sm:text-4xl font-cormorant-garamond">
+              Магазин
+            </h3>
+            <ul className="flex flex-col gap-2 *:hover:*:opacity-60  *:tracking-tighter">
               <li>
                 <Link href={"/"}>Моти</Link>
               </li>
@@ -73,8 +75,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-8">
-            <h3 className="text-3xl sm:text-4xl tracking-widest">Инфо</h3>
-            <ul className="gap-2 flex flex-col *:hover:*:opacity-60">
+            <h3 className="text-2xl sm:text-4xl font-cormorant-garamond">
+              Инфо
+            </h3>
+            <ul className="gap-2 flex flex-col *:hover:*:opacity-60 *:tracking-tighter">
               <li>
                 <Link href={"/"}>Контакты</Link>
               </li>

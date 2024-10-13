@@ -5,10 +5,10 @@ import { PiPlant } from "react-icons/pi";
 const AboutSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  bg-background-light">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 text-heading bg-background-light">
         <div className="flex flex-col justify-start gap-20 p-10 sm:p-24">
           <div>
-            <h1 className="text-5xl sm:text-7xl font-serif text-heading-dark pl-12 relative">
+            <h1 className="text-5xl sm:text-7xl font-cormorant-garamond text-heading-dark pl-12 relative">
               MiDori
               <svg
                 className="left-0 -bottom-20 w-56 absolute"
@@ -31,7 +31,7 @@ const AboutSection = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-3xl sm:text-5xl font-serif-italic text-heading-dark">
+              <span className="text-3xl sm:text-5xl font-cormorant-garamond italic text-heading-dark">
                 {" "}
                 — это
               </span>
@@ -46,8 +46,9 @@ const AboutSection = () => {
                   ЛУЧШИЕ ИНГРЕДИЕНТЫ
                 </h2>
                 <p className="max-w-[80%]">
-                  Мы сотрудничаем с одним из лучших поставщиков Японии и делаем
-                  наши десерты из самых свежих и высококачественных
+                  Мы сотрудничаем с одним из{" "}
+                  <span className="bg-button">лучших поставщиков Японии</span> и
+                  делаем наши десерты из самых свежих и высококачественных
                   ингредиентов.
                 </p>
               </div>
@@ -61,8 +62,8 @@ const AboutSection = () => {
                 </h2>
                 <p className="max-w-[80%]">
                   MiDori вдохновляется традициями японских мастеров, все наши
-                  моти ручной работы и приготовлены по лучшим рецептам,
-                  проверенным временем
+                  моти <span className="bg-button-hover">ручной работы</span> и
+                  приготовлены по лучшим рецептам, проверенным временем
                 </p>
               </div>
             </div>
@@ -82,9 +83,9 @@ const AboutSection = () => {
             <button
               className="rounded-3xl  border border-foreground
               bg-button
-              group hover:italic hover:bg-button-hover
-              hover:shadow-[inset_0_0_4px_2px_rgba(43,230,96,0.36),0_0_6px_2px_rgba(43,230,96,0.36)]
-              px-7 py-1 font-sans-light 
+              group hover:italic hover:bg-transparent
+              hover:shadow-[inset_0_0_4px_2px_rgba(102,219,178,0.36),0_0_6px_2px_rgba(102,219,178,0.36)]
+              px-7 py-1 
               w-auto self-center mt-6
               flex items-center gap-2"
             >
@@ -99,13 +100,13 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start gap-4 bg-button p-16 sm:p-24">
+        <div className="flex flex-col justify-start gap-4 bg-background p-16 sm:p-24">
           <img
             src="/images/mochi-mandarin.png"
             alt="Japanese Dessert"
             className="w-full object-cover h-auto -mt-14 mb-5"
           />
-          <h2 className="mb-5 text-5xl text-heading-dark font-serif-italic">
+          <h2 className="mb-5 text-5xl text-heading-dark font-cormorant-garamond">
             Японский десерт с многолетней историей
           </h2>
           <p className="">

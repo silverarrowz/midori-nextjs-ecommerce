@@ -5,8 +5,9 @@
 :root {
   --button: 76 100% 87%;
   --button-hover: #f6e374;
-  --heading-dark: #23b963;
-  --background-light: #e2f4e2;
+  --heading-dark: #1cb881;
+  --heading: #65dab1;
+  --background-light: #e3fbff;
   --background-lightest: #f0f8f0;
 }
 
@@ -29,7 +30,7 @@ body {
 
 @layer base {
   :root {
-    --background: 149 64% 89%;
+    --background: 188 85% 87%;
     --foreground: 137 79% 54%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;

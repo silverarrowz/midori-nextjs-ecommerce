@@ -62,15 +62,19 @@ const MatchaSection = () => {
     relative overflow-hidden
    bg-background-lightest"
     >
-      <h2
-        className="z-50 text-3xl md:text-4xl lg:text-5xl
-      text-center font-serif text-heading-dark"
-      >
-        Матча
-      </h2>
-      <p className="text-center py-6 px-8 font-sans-light">
-        Мы рады представить Вам нашу новую коллецкцию MiDori Matcha — идеальное
-        дополнение к Вашему любимому десерту!
+      <div className="relative z-50 w-auto">
+        <h2
+          className="z-50 text-3xl md:text-4xl lg:text-5xl
+      text-center font-cormorant-garamond text-heading-dark"
+        >
+          Матча
+        </h2>
+      </div>
+
+      <p className="text-center text-heading py-6 px-8 ">
+        Мы рады представить Вам нашу новую коллецкцию MiDori Matcha —{" "}
+        <span className="bg-button">идеальное дополнение</span> к Вашему
+        любимому десерту!
       </p>
 
       <div
@@ -79,14 +83,14 @@ const MatchaSection = () => {
       >
         <button>
           <MdNavigateBefore
-            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute left-0 top-[30%] sm:hidden"
+            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute left-0 top-[30%] text-heading-dark sm:hidden"
             // @ts-expect-error test
             onClick={() => slider?.current?.slickPrev()}
           />
         </button>
         <button>
           <MdNavigateNext
-            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute right-0 top-[30%] sm:hidden"
+            className="z-20 h-10 w-10 xs:h-14 xs:w-14 opacity-55 absolute right-0 top-[30%] text-heading-dark sm:hidden"
             // @ts-expect-error test
             onClick={() => slider?.current?.slickNext()}
           />
@@ -105,11 +109,13 @@ const MatchaSection = () => {
         </Slider>
 
         <button
-          className="
-              group hover:opacity-70
-             self-center mt-6
-              flex items-center gap-2
-              mx-auto font-sans-light uppercase tracking-widest"
+          className="rounded-3xl
+             mx-auto border border-heading-dark text-heading-dark
+              group hover:italic bg-transparent
+              hover:shadow-[inset_0_0_4px_2px_rgba(102,219,178,0.36),0_0_6px_2px_rgba(102,219,178,0.36)]
+              px-7 py-1 font-light 
+              w-auto self-center mt-6
+              flex items-center gap-2"
         >
           Смотреть все
           <span
