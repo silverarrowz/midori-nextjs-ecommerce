@@ -100,7 +100,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start gap-4 bg-background p-16 sm:p-24">
+        <div className="flex flex-col justify-start gap-4 bg-background-lightest p-16 sm:p-24">
           <img
             src="/images/mochi-mandarin.png"
             alt="Japanese Dessert"

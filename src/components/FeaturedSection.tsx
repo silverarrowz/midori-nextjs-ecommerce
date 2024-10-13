@@ -60,7 +60,7 @@ const FeaturedSection = () => {
     relative overflow-hidden"
     >
       <h2
-        className="z-50 text-3xl md:text-4xl lg:text-5xl
+        className="z-50 text-3xl md:text-4xl lg:text-6xl
       text-center font-cormorant-garamond text-heading-dark"
       >
         Новинки

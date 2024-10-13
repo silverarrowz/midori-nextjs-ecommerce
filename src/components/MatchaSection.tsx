@@ -60,11 +60,11 @@ const MatchaSection = () => {
       className="
     pt-8 
     relative overflow-hidden
-   bg-background-lightest"
+   bg-white"
     >
       <div className="relative z-50 w-auto">
         <h2
-          className="z-50 text-3xl md:text-4xl lg:text-5xl
+          className="z-50 text-3xl md:text-4xl lg:text-6xl
       text-center font-cormorant-garamond text-heading-dark"
         >
           Матча
