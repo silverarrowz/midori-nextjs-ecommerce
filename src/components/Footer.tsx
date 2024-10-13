@@ -6,7 +6,7 @@ import { RiVkLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <footer
-      className="min-h-[420px] bg-background
+      className="min-h-[420px] bg-gradient-to-b from-background-lightest to-background
     relative  px-4 py-8 sm:px-16 sm:pt-16"
     >
       <div className="flex flex-col gap-y-20 md:flex-row justify-between">

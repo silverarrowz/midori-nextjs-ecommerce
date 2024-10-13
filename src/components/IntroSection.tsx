@@ -18,16 +18,16 @@ const IntroSection = () => {
       </div>
       <div className="z-10 lg:absolute top-[14%] right-[14%]">
         <div className="text-center flex flex-col gap-1.5 items-center mt-14 lg:mt-0">
-          <h1 className="text-8xl xs:text-9xl text-foreground font-cormorant-garamond">
+          <h1 className="text-8xl xs:text-9xl text-foreground font-bold font-cormorant-garamond">
             MiDori
           </h1>
-          <p className="font-light tracking-wider">Моти ручной работы</p>
+          <p className=" tracking-wider">Моти ручной работы</p>
           <div className="flex justify-center gap-3 mt-5">
             <Link
               href={"#mochi"}
               className="bg-button/60 backdrop-blur-md hover:bg-button flex items-center
                hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
-              leading-3
+              leading-3 font-bold
              text-foreground rounded-3xl
              border-2 border-foreground py-3 px-8 tracking-widest"
             >
@@ -39,7 +39,7 @@ const IntroSection = () => {
              border-2 shadow-[inset_0_0_2px_2px_rgba(43,230,96,0.36),0_0_6px_1px_rgba(43,230,96,0.36)]
              hover:shadow-[inset_0_0_4px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
              border-foreground py-3 px-8 tracking-widest
-             backdrop-blur-lg rounded-3xl
+             backdrop-blur-lg rounded-3xl font-bold
              "
             >
               Матча
