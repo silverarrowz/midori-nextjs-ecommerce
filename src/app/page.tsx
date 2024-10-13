@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import IntroSection from "@/components/IntroSection";
 import MatchaSection from "@/components/MatchaSection";
 import ReviewsSection from "@/components/ReviewsSection";
-import ScrollButton from "@/components/ScrollButton";
+// import ScrollButton from "@/components/ScrollButton";
 
 export default function Home() {
   return (

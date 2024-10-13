@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaArrowCircleUp, FaChevronUp } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
