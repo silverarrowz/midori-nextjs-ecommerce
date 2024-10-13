@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
-import { IoMdStar, IoMdStarOutline } from "react-icons/io";
+import { IoMdStar } from "react-icons/io";
 
 const ReviewsSection = () => {
   const settings = {
@@ -88,7 +88,7 @@ const ReviewsSection = () => {
     <section className="bg-white min-h-96 pt-2 pb-16">
       <div
         className="z-50 text-3xl md:text-4xl lg:text-5xl
-      font-cormorant-garamond my-10 sm:my-16
+      font-cormorant-garamond mt-6 mb-10 sm:mt-10 sm:mb-16
      mx-4 sm:mx-24 xl:mx-44 
      relative"
       >
