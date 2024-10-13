@@ -7,7 +7,7 @@ import { RiAccountCircleLine } from "react-icons/ri";
 const Header = () => {
   return (
     <header
-      className="w-full p-3 md:p-5 grid grid-cols-3 items-center 
+      className="w-full p-3 md:px-5 xs:py-6 grid grid-cols-3 items-center 
       fixed z-[1111] bg-background/75 backdrop-blur-md
    
     "
