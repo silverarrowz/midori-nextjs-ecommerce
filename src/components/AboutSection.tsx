@@ -85,7 +85,7 @@ const AboutSection = () => {
               bg-button
               group hover:italic hover:bg-transparent
               hover:shadow-[inset_0_0_4px_3px_rgba(215,89,161,0.36),0_0_6px_3px_rgba(215,89,161,0.42)]
-              px-7 py-1 
+              px-7 py-1  transition duration-300
               w-auto self-center mt-6
               flex items-center gap-2"
             >

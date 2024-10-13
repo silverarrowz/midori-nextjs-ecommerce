@@ -156,7 +156,7 @@ const MatchaSection = () => {
         <button
           className="rounded-3xl
              mx-auto border border-heading text-heading
-               bg-transparent
+               bg-transparent  transition-all duration-300
               hover:shadow-[inset_0_0_4px_2px_rgba(215,89,161,0.36),0_0_6px_2px_rgba(215,89,161,0.36)]
               px-7 py-1 tracking-widest
               w-auto self-center mt-6

@@ -33,7 +33,7 @@ const FeaturedItem = ({ image, price, title, amount }: FeaturedItemProps) => {
         <p className="font-light">{price} руб.</p>
         <button
           className="rounded-3xl border border-heading
-            bg-button hover:bg-button/70 transition
+            bg-button hover:bg-button/70  transition-all duration-300
             hover:shadow-[inset_0_0_4px_2px_rgba(215,89,161,0.36),0_0_6px_2px_rgba(215,89,161,0.36)]
             px-9 sm:px-6 md:px-12 py-2 mb-2  tracking-widest"
         >
