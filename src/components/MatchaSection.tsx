@@ -60,7 +60,7 @@ const MatchaSection = () => {
       className="
     pt-8 
     relative overflow-hidden
-   bg-white"
+   bg-gradient-to-b from-background via-background-lightest to-white"
     >
       <div className="relative z-50 w-auto">
         <h2

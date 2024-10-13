@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --button: 60 100% 79%;
-  --button-hover: #f6e374;
+  --button: 66 100% 76%;
+  --button-hover: #f3ff87;
   --heading-dark: #00ca9b;
   --heading: #65dab1;
   --background-light: #e3fbff;

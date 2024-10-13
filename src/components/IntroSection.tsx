@@ -4,19 +4,19 @@ const IntroSection = () => {
   return (
     <section
       className="relative h-screen flex 
-    justify-center lg:justify-end"
+    justify-center lg:justify-end pt-14 lg:min-h-screen lg:mb-36"
     >
       <div
         className="absolute bottom-10 left-0
         sm:w-[75%] sm:h-[21.25rem]
         md:max-w-[640px]
-        lg:bottom-[25%] lg:left-0 lg:h-[400px] lg:w-[55%] lg:max-w-none
-        xl:bottom-[35%]
+        lg:bottom-[15%] lg:left-0 lg:h-[400px] lg:w-[55%] lg:max-w-none
+     
       "
       >
         <img src="/images/mochi-yellow-blur.png" alt="green tea mochi" />
       </div>
-      <div className="z-10 lg:absolute top-[14%] right-[14%]">
+      <div className="z-10 lg:absolute top-[14%] right-[14%] lg:top-[30%]">
         <div className="text-center flex flex-col gap-1.5 items-center mt-14 lg:mt-0">
           <h1 className="text-8xl xs:text-9xl text-foreground font-bold font-cormorant-garamond">
             MiDori
@@ -51,7 +51,7 @@ const IntroSection = () => {
       <div
         className="absolute -z-10 -bottom-20 sm:-bottom-32
         md:-bottom-48 
-        lg:-bottom-4
+        lg:-bottom-36
     left-0 w-full overflow-hidden leading-[0]"
       >
         <svg

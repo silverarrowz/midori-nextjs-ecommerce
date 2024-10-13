@@ -57,7 +57,7 @@ const ReviewsSection = () => {
       name: "Лиза",
       comment:
         "Моти для меня — самое вкусное лакомство в мире, но моти от MiDori - это просто новый уровень! Не передать словами, просто поверьте мне и попробуйте сами.",
-      image: "/images/reviews3.webp",
+      image: "/images/reviews6.webp",
     },
     {
       username: "jennysjapan",
@@ -71,7 +71,7 @@ const ReviewsSection = () => {
       name: "Аня",
       comment:
         "Две моих страсти — моти и матча — в одном потрясающе вкусном сочетании! Этот вкус был словно создан для меня, отдельное за него спасибо. Другие вкусы, впрочем, точно так же восхитительны.",
-      image: "/images/reviews6.webp",
+      image: "/images/reviews3.webp",
     },
     {
       username: "_mintysky_y",

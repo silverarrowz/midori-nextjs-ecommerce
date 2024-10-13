@@ -23,7 +23,7 @@ const FeaturedSection = () => {
       image: "/images/mochi-pineapple.png",
     },
     {
-      title: "«Маковый»",
+      title: "«Мак»",
       price: 190,
       image: "/images/mochi-sesame.png",
     },
