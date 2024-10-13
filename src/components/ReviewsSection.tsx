@@ -6,8 +6,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
-import { IoMdStar, IoMdStarOutline } from "react-icons/io";
-import { FaRegStar } from "react-icons/fa";
+import { IoMdStarOutline } from "react-icons/io";
 
 const ReviewsSection = () => {
   const settings = {
