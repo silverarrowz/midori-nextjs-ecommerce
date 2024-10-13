@@ -35,17 +35,18 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="E-mail"
-                className="py-2 px-4 border border-foreground 
+                className="py-2 px-4 border border-foreground/60 
                  placeholder:text-foreground
                 focus:outline-none 
+                
               rounded-3xl
                   font-sans-light"
               />
               <button
                 className="bg-button rounded-3xl
-             tracking-widest border border-foreground
-               hover:bg-transparent hover:italic
-                hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
+             tracking-widest border border-foreground/60
+               hover:bg-transparent
+                hover:shadow-[inset_0_0_3px_3px_rgba(215,89,161,0.36),0_0_7px_4px_rgba(215,89,161,0.36)]
                 px-6 py-2"
               >
                 Подписаться

@@ -26,7 +26,7 @@ const IntroSection = () => {
             <Link
               href={"#mochi"}
               className="bg-button/60 backdrop-blur-md hover:bg-button flex items-center
-               hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
+               hover:shadow-[inset_0_0_3px_3px_rgba(215,89,161,0.36),0_0_7px_4px_rgba(215,89,161,0.36)]
               leading-3 font-bold
              text-foreground rounded-3xl
              border-2 border-foreground py-3 px-8 tracking-widest"
@@ -36,8 +36,8 @@ const IntroSection = () => {
             <Link
               href={"#matcha"}
               className="bg-background/40 text-foreground  flex items-center leading-3
-             border-2 shadow-[inset_0_0_2px_2px_rgba(43,230,96,0.36),0_0_6px_1px_rgba(43,230,96,0.36)]
-             hover:shadow-[inset_0_0_4px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
+             border-2 shadow-[inset_0_0_2px_2px_rgba(215,89,161,0.36),0_0_6px_1px_rgba(215,89,161,0.36)]
+             hover:shadow-[inset_0_0_4px_3px_rgba(215,89,161,0.36),0_0_7px_4px_rgba(215,89,161,0.36)]
              border-foreground py-3 px-8 tracking-widest
              backdrop-blur-lg rounded-3xl font-bold
              "
