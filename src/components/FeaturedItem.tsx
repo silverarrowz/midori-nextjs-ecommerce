@@ -24,7 +24,7 @@ const FeaturedItem = ({ image, price, title, amount }: FeaturedItemProps) => {
 
       <div className="flex flex-col items-center gap-4">
         <h3
-          className="text-2xl sm:text-xl md:text-2xl leading-none
+          className="text-2xl sm:text-xl md:text-3xl leading-none
          tracking-widest font-cormorant-garamond"
         >
           {title}
@@ -32,10 +32,10 @@ const FeaturedItem = ({ image, price, title, amount }: FeaturedItemProps) => {
         {amount && <p className="font-light text-sm opacity-70">{amount}</p>}
         <p className="font-light">{price} руб.</p>
         <button
-          className="rounded-3xl border border-heading-dark
-            bg-button/40 hover:bg-button 
+          className="rounded-3xl border border-heading
+            bg-button hover:bg-button/70 transition
             hover:shadow-[inset_0_0_4px_2px_rgba(102,219,178,0.36),0_0_6px_2px_rgba(102,219,178,0.36)]
-            px-9 sm:px-6 md:px-12 py-2 mb-2 uppercase font-light tracking-widest"
+            px-9 sm:px-6 md:px-12 py-2 mb-2  tracking-widest"
         >
           В корзину
         </button>

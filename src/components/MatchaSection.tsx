@@ -110,20 +110,14 @@ const MatchaSection = () => {
 
         <button
           className="rounded-3xl
-             mx-auto border border-heading-dark text-heading-dark
-              group hover:italic bg-transparent
+             mx-auto border border-heading text-heading
+               bg-transparent
               hover:shadow-[inset_0_0_4px_2px_rgba(102,219,178,0.36),0_0_6px_2px_rgba(102,219,178,0.36)]
-              px-7 py-1 font-light 
+              px-7 py-1 tracking-widest
               w-auto self-center mt-6
               flex items-center gap-2"
         >
           Смотреть все
-          <span
-            className="text-xl group-hover:translate-x-1 transition-all
-               duration-100 ease-in-out"
-          >
-            &rarr;
-          </span>
         </button>
       </div>
     </section>
