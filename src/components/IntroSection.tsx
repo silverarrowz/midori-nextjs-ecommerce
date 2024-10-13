@@ -7,7 +7,7 @@ const IntroSection = () => {
     justify-center lg:justify-end"
     >
       <div
-        className="absolute bottom-0 left-0
+        className="absolute bottom-10 left-0
         sm:w-[75%] sm:h-[21.25rem]
         md:max-w-[640px]
         lg:bottom-[25%] lg:left-0 lg:h-[400px] lg:w-[55%] lg:max-w-none
@@ -18,27 +18,29 @@ const IntroSection = () => {
       </div>
       <div className="z-10 lg:absolute top-[14%] right-[14%]">
         <div className="text-center flex flex-col gap-1.5 items-center mt-14 lg:mt-0">
-          <h1 className="text-8xl sm:text-9xl text-foreground font-serif-italic">
+          <h1 className="text-8xl xs:text-9xl text-foreground font-serif-italic">
             MiDori
           </h1>
-          <p className="font-sans-light">магазин моти ручной работы</p>
+          <p className="font-sans-light uppercase tracking-wider">
+            моти ручной работы
+          </p>
           <div className="flex justify-center gap-3 mt-5">
             <Link
               href={"#mochi"}
-              className="bg-button/60 backdrop-blur-md hover:bg-button-hover 
+              className="bg-button/60 backdrop-blur-md hover:bg-button-hover flex items-center
                hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
-             
-             text-foreground font-sans-light
-             border-2 border-foreground py-1 px-8 rounded-[14px]"
+             uppercase leading-3
+             text-foreground font-serif
+             border-2 border-foreground py-3 px-8 tracking-wide"
             >
               Моти
             </Link>
             <Link
               href={"#matcha"}
-              className="bg-background/40 text-foreground font-sans-light
+              className="bg-background/40 text-foreground font-serif uppercase flex items-center leading-3
              border-2 shadow-[inset_0_0_2px_2px_rgba(43,230,96,0.36),0_0_6px_1px_rgba(43,230,96,0.36)]
              hover:shadow-[inset_0_0_4px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
-             border-foreground py-1 px-8 rounded-[14px] 
+             border-foreground py-3 px-8 tracking-wide
              backdrop-blur-lg
              "
             >

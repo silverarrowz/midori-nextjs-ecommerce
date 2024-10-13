@@ -16,7 +16,7 @@ const ReviewsSection = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     pauseOnHover: true,
     cssEase: "ease-in-out",
     responsive: [

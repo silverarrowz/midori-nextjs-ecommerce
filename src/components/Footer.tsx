@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer
       className="min-h-[420px] bg-gradient
-    px-4 py-8 sm:px-16 sm:py-36"
+    px-4 py-8 sm:px-16 sm:pt-16"
     >
-      <div className="flex flex-col gap-y-20 sm:flex-row justify-between">
+      <div className="flex flex-col gap-y-20 md:flex-row justify-between">
         <div className="flex flex-col gap-16 sm:gap-28">
           <div className="flex flex-col gap-8">
             <h3 className="text-3xl sm:text-4xl tracking-widest">
@@ -35,14 +35,14 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="E-mail"
-                className="rounded-[14px] py-2 px-4 border border-foreground 
+                className="py-2 px-4 border border-foreground 
                  placeholder:text-foreground
                 focus:outline-none 
               
                   font-sans-light"
               />
               <button
-                className="rounded-[14px] bg-button 
+                className="bg-button 
              tracking-widest border border-foreground
                hover:bg-transparent hover:italic
                 hover:shadow-[inset_0_0_3px_3px_rgba(43,230,96,0.36),0_0_7px_4px_rgba(43,230,96,0.36)]
