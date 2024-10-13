@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
-import { IoMdStarOutline } from "react-icons/io";
+import { IoMdStar, IoMdStarOutline } from "react-icons/io";
 
 const ReviewsSection = () => {
   const settings = {
@@ -158,7 +158,10 @@ const ReviewsSection = () => {
                   alt={review.name}
                   className="object-cover absolute top-0 left-0 w-full h-full"
                 />
-                <div className="absolute top-0 left-0 bottom-0 right-0 z-30 bg-background/30 hover:bg-transparent transition" />
+                <div
+                  className="absolute top-0 left-0 bottom-0 right-0 z-30 
+                bg-background/30 hover:bg-transparent transition"
+                />
               </div>
               <div
                 className="flex *:text-heading-dark 
@@ -167,16 +170,14 @@ const ReviewsSection = () => {
               lg:*:w-10 lg:*:h-10
              "
               >
-                <IoMdStarOutline />
-                <IoMdStarOutline />
-                <IoMdStarOutline />
-                <IoMdStarOutline />
-                <IoMdStarOutline />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
               </div>
               <div className="flex flex-col gap-2 text-center sm:text-left mb-2">
-                <h4 className="text-xl text-heading-dark font-semibold">
-                  {review.name}
-                </h4>
+                <h4 className="text-xl text-heading-dark">{review.name}</h4>
                 <p className="text-sm text-heading">@{review.username}</p>
               </div>
               <p className="text-sm text-heading italic font-light px-8 sm:p-0">
