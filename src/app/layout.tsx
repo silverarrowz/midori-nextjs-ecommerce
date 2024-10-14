@@ -1,49 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Mulish, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
-const ubuntu = Mulish({
+const sans = Mulish({
   weight: ["300", "400", "700"],
   subsets: ["cyrillic", "latin"],
-  variable: "--font-ubuntu",
+  variable: "--font-mulish",
 });
 
-const cormorantGaramond = Cormorant_Garamond({
+const serif = Cormorant_Garamond({
   weight: ["300", "400", "700"],
   variable: "--font-cormorant-garamond",
   style: ["italic", "normal"],
   subsets: ["cyrillic", "latin"],
-});
-
-const garamond = localFont({
-  src: "./fonts/Garamond.ttf",
-  variable: "--font-garamond",
-  weight: "400",
-});
-
-const garamondItalic = localFont({
-  src: "./fonts/Garamond-Italic.woff",
-  variable: "--font-garamond-italic",
-  weight: "400",
-});
-
-const garamondBold = localFont({
-  src: "./fonts/Garamond-Bold.ttf",
-  variable: "--font-garamond-bold",
-  weight: "700",
-});
-
-const roboto = localFont({
-  src: "./fonts/Roboto-Regular.ttf",
-  variable: "--font-roboto",
-  weight: "400",
-});
-
-const robotoLight = localFont({
-  src: "./fonts/Roboto-Light.ttf",
-  variable: "--font-roboto-light",
-  weight: "100",
 });
 
 export const metadata: Metadata = {
@@ -59,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.variable} ${garamond.variable} ${ubuntu.variable} ${garamondBold.variable} ${roboto.variable} ${robotoLight.variable} ${garamondItalic.variable} font-ubuntu antialiased`}
+        className={`${serif.variable} ${sans.variable} font-sans antialiased`}
       >
         {children}
       </body>

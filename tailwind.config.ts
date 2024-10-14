@@ -61,13 +61,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-roboto)"],
-        serif: ["var(--font-garamond)"],
-        "sans-light": ["var(--font-roboto-light)"],
-        "serif-italic": ["var(--font-garamond-italic)"],
-        "serif-bold": ["var(--font-garamond-bold)"],
-        ubuntu: ["var(--font-ubuntu)"],
-        "cormorant-garamond": ["var(--font-cormorant-garamond)"],
+        sans: ["var(--font-mulish)"],
+        serif: ["var(--font-cormorant-garamond)"],
       },
       borderRadius: {
         lg: "var(--radius)",

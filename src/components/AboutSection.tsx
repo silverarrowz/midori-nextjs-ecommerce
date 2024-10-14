@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 text-heading bg-background-light">
         <div className="flex flex-col justify-start gap-20 p-10 sm:p-24">
           <div>
-            <h1 className="text-5xl sm:text-7xl font-cormorant-garamond text-heading-dark pl-12 relative">
+            <h1 className="text-5xl sm:text-7xl font-serif text-heading-dark pl-12 relative">
               MiDori
               <svg
                 className="left-0 -bottom-20 w-56 absolute"
@@ -31,7 +31,7 @@ const AboutSection = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-3xl sm:text-5xl font-cormorant-garamond italic text-heading-dark">
+              <span className="text-3xl sm:text-5xl font-serif italic text-heading-dark">
                 {" "}
                 — это
               </span>
@@ -106,7 +106,7 @@ const AboutSection = () => {
             alt="Japanese Dessert"
             className="w-full object-cover h-auto -mt-14 mb-5"
           />
-          <h2 className="mb-5 text-5xl text-heading-dark font-cormorant-garamond">
+          <h2 className="mb-5 text-5xl text-heading-dark font-serif">
             Японский десерт с многолетней историей
           </h2>
           <p className="">

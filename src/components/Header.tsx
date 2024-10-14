@@ -16,7 +16,6 @@ const Header = () => {
     <header
       className="w-full p-3 md:px-5 xs:py-6 grid grid-cols-3 items-center 
       fixed z-[1111] bg-background/75 backdrop-blur-md
-   
     "
     >
       <nav className="hidden lg:block">
@@ -60,7 +59,7 @@ const Header = () => {
       <MobileNav />
       <Link
         href={"/"}
-        className="text-2xl text-foreground font-cormorant-garamond
+        className="text-2xl text-foreground font-serif
         text-center"
       >
         MiDori

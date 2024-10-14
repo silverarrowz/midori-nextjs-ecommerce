@@ -18,7 +18,12 @@ const FeaturedSection = () => {
       image: "/images/mochi-mandarin.png",
     },
     {
-      title: "«Пина Колада»",
+      title: "«Мак»",
+      price: 190,
+      image: "/images/mochi-sesame.png",
+    },
+    {
+      title: "«Тропические сны»",
       price: 260,
       image: "/images/mochi-pineapple.png",
     },
@@ -27,12 +32,17 @@ const FeaturedSection = () => {
       price: 190,
       image: "/images/mochi-sesame.png",
     },
+    {
+      title: "«Тропические сны»",
+      price: 260,
+      image: "/images/mochi-pineapple.png",
+    },
   ];
 
   const settings = {
     infinite: true,
     speed: 400,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: false,
@@ -40,6 +50,14 @@ const FeaturedSection = () => {
     pauseOnHover: true,
     cssEase: "ease-in-out",
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+        },
+      },
       {
         breakpoint: 640,
         settings: {
@@ -56,16 +74,15 @@ const FeaturedSection = () => {
       id="mochi"
       className="bg-white mt-16 sm:mt-28 md:mt-48 
     lg:mt-4 
-    pt-8 pb-8 
+    pt-8 pb-4
     relative overflow-hidden"
     >
       <h2
         className="z-50 text-3xl md:text-4xl lg:text-6xl
-      text-center font-cormorant-garamond text-heading-dark"
+      text-center font-serif text-heading-dark"
       >
         Новинки
-        <div className="mb-12">
-          {" "}
+        <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -112,7 +129,7 @@ const FeaturedSection = () => {
       </h2>
 
       <div
-        className=" max-w-[94%] text-center 
+        className="max-w-[94%] text-center 
       mx-auto py-16 relative"
       >
         <button>

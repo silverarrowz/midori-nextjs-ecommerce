@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const MobileNav = () => {
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden flex items-center">
       <Sheet>
         <SheetTrigger>
           <RxHamburgerMenu className="" size={24} />

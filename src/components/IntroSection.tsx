@@ -18,7 +18,7 @@ const IntroSection = () => {
       </div>
       <div className="z-10 lg:absolute top-[14%] right-[14%] lg:top-[30%]">
         <div className="text-center flex flex-col gap-1.5 items-center mt-14 lg:mt-0">
-          <h1 className="text-8xl xs:text-9xl text-foreground font-bold font-cormorant-garamond">
+          <h1 className="text-8xl xs:text-9xl text-foreground font-bold font-serif">
             MiDori
           </h1>
           <p className=" tracking-wider">Моти ручной работы</p>
